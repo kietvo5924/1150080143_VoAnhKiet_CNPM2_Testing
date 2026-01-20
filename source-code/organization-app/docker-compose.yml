@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:16-alpine
+    container_name: organization-postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=admin        # USER MỚI
+      - POSTGRES_PASSWORD=admin123 # PASS MỚI
+      - POSTGRES_DB=OrganizationDB
+    ports:
+      - "5433:5432"                # ĐỔI CỔNG 5432 -> 5433 (Quan trọng)
+    volumes:
+      - postgres_data_new:/var/lib/postgresql/data
+
+volumes:
+  postgres_data_new:               # ĐỔI TÊN VOLUME ĐỂ KHÔNG DÍNH DỮ LIỆU CŨ
