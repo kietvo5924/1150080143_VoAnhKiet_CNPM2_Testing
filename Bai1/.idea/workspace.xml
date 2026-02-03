@@ -5,54 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84e1453b-039c-439b-9f2f-70c7781c93f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fploy/JUnitMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fploy/AirthematicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai2/src/main/java/fploy/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai2/src/test/java/fploy/PersonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai3/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai3/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai3/src/main/java/junit/ErrorCollectorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai3/src/main/java/junit/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai4/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai4/src/main/java/fploy/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai4/src/main/java/fploy/OrganizationForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai4/src/main/java/fploy/OrganizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai4/src/test/java/fploy/OrganizationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai5/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai5/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai5/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai5/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai5/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai5/src/main/java/fploy/bai5/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai5/src/main/java/fploy/bai5/JobForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai5/src/main/java/fploy/bai5/JobService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai5/src/test/java/fploy/bai5/JobTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai6/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai6/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai6/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai6/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai6/src/main/java/fpoly/bai6/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai6/src/main/java/fpoly/bai6/UserForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai6/src/main/java/fpoly/bai6/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai6/src/test/java/fpoly/bai6/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bai4/src/test/java/fploy/OrganizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai4/src/test/java/fploy/OrganizationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bai6/src/test/java/fpoly/bai6/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai6/src/test/java/fpoly/bai6/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Buoi1",
+    "git-widget-placeholder": "Buoi6",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -141,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1770100252862</updated>
-      <workItem from="1770100253987" duration="1335000" />
+      <workItem from="1770100253987" duration="3133000" />
     </task>
     <servers />
   </component>
