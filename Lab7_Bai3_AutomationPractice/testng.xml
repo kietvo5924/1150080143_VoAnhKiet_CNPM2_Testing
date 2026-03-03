@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Lab7_Bai3_Suite">
+    <test name="Run_Automation_Practice_Tests">
+        <classes>
+            <class name="TC_AutomationPracticeTest" />
+        </classes>
+    </test>
+</suite>
