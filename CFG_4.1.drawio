@@ -1,0 +1,199 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="CFG tinhPhiShip" id="BAUL5FCQVBbKOcacfFgf">
+    <mxGraphModel dx="1221" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UMf74W2sRUu-QZbhVE90-41" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="N1: trongLuong &lt;= 0" vertex="1">
+          <mxGeometry height="60" width="160" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="N2: throw Exception" vertex="1">
+          <mxGeometry height="40" width="120" x="560" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-43" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="N3: vung == &quot;noi_thanh&quot;" vertex="1">
+          <mxGeometry height="60" width="160" x="340" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="N4: phi = 15000" vertex="1">
+          <mxGeometry height="40" width="120" x="160" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-45" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="N5: trongLuong &gt; 5" vertex="1">
+          <mxGeometry height="60" width="160" x="140" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="N6: phi += (tL-5)*2000" vertex="1">
+          <mxGeometry height="40" width="140" x="20" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-47" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="N7: vung == &quot;ngoai_thanh&quot;" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="N8: phi = 25000" vertex="1">
+          <mxGeometry height="40" width="120" x="380" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-49" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="N9: trongLuong &gt; 3" vertex="1">
+          <mxGeometry height="60" width="160" x="360" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="N10: phi += (tL-3)*3000" vertex="1">
+          <mxGeometry height="40" width="140" x="240" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="N11: phi = 50000" vertex="1">
+          <mxGeometry height="40" width="120" x="640" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-52" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="N12: trongLuong &gt; 2" vertex="1">
+          <mxGeometry height="60" width="160" x="340" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="N13: phi += (tL-2)*5000" vertex="1">
+          <mxGeometry height="40" width="140" x="540" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-54" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="N14: laMember" vertex="1">
+          <mxGeometry height="60" width="160" x="340" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="N15: phi = phi * 0.9" vertex="1">
+          <mxGeometry height="40" width="140" x="540" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="N16: return phi" vertex="1">
+          <mxGeometry height="40" width="140" x="350" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-57" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1" value="Exit" vertex="1">
+          <mxGeometry height="40" width="80" x="380" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-58" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-41" target="UMf74W2sRUu-QZbhVE90-42" value="True">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-59" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-41" target="UMf74W2sRUu-QZbhVE90-43" value="False">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-60" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-42" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-57">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="70" />
+              <mxPoint x="780" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-61" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-43" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-44" value="True">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-62" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-43" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-47" value="False">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-63" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-44" target="UMf74W2sRUu-QZbhVE90-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-64" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-45" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-46" value="True">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-65" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-52" value="False">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-66" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-46" style="rounded=0;edgeStyle=orthogonalEdgeStyle;" target="UMf74W2sRUu-QZbhVE90-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-67" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-47" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-48" value="True">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-68" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-47" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-51" value="False">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-69" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-48" target="UMf74W2sRUu-QZbhVE90-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-70" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-49" target="UMf74W2sRUu-QZbhVE90-50" value="True">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-71" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-49" style="edgeStyle=orthogonalEdgeStyle;" target="UMf74W2sRUu-QZbhVE90-52" value="False">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="530" />
+              <mxPoint x="440" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-72" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-50" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="520" />
+              <mxPoint x="420" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-73" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-51" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="520" />
+              <mxPoint x="420" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-74" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-52" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-53" value="True">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-75" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-52" target="UMf74W2sRUu-QZbhVE90-54" value="False">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-76" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-53" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="700" />
+              <mxPoint x="420" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-77" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-54" style="rounded=0;curved=0;" target="UMf74W2sRUu-QZbhVE90-55" value="True">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-78" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-54" target="UMf74W2sRUu-QZbhVE90-56" value="False">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-79" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-55" style="rounded=0;edgeStyle=orthogonalEdgeStyle;" target="UMf74W2sRUu-QZbhVE90-56">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMf74W2sRUu-QZbhVE90-80" edge="1" parent="1" source="UMf74W2sRUu-QZbhVE90-56" target="UMf74W2sRUu-QZbhVE90-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

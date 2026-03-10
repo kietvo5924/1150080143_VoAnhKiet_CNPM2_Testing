@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_Parallel" parallel="classes" thread-count="2" verbose="1">
+    <test name="Test_Chay_Song_Song">
+        <classes>
+            <class name="dtm.LoginTest"/>
+            <class name="dtm.CartTest"/>
+        </classes>
+    </test>
+</suite>
