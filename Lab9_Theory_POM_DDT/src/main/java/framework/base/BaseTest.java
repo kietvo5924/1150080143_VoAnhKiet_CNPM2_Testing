@@ -4,54 +4,51 @@ import framework.config.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import java.net.URL;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import java.time.Duration;
 
 public abstract class BaseTest {
     private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
-
     protected WebDriver getDriver() { return tlDriver.get(); }
 
     @Parameters({"browser", "env"})
     @BeforeMethod(alwaysRun = true)
-    public void setUp(@Optional("chrome") String browser, @Optional("dev") String env) {
-        // Đặt env làm System property để ConfigReader đọc đúng file
+    public void setUp(@Optional("chrome") String browser, @Optional("dev") String env) throws Exception {
         System.setProperty("env", env);
+        String gridUrl = System.getProperty("grid.url"); // Nhận link từ lệnh mvn
+        WebDriver driver;
 
-        // GitHub Actions tự đặt biến CI=true
-        boolean isCI = System.getenv("CI") != null;
-
-        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
-        if (isCI) {
-            options.addArguments("--headless=new");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-dev-shm-usage"); // Tránh lỗi OOM trên GitHub [cite: 98]
-            options.addArguments("--window-size=1920,1080");
+        if (gridUrl != null && !gridUrl.isEmpty()) {
+            // --- CẤU HÌNH GỬI LỆNH SANG DOCKER (GRID) ---
+            DesiredCapabilities caps = new DesiredCapabilities();
+            caps.setBrowserName(browser);
+            driver = new RemoteWebDriver(new URL(gridUrl + "/wd/hub"), caps);
         } else {
-            options.addArguments("--start-maximized");
+            // --- CẤU HÌNH CHẠY LOCAL NHƯ CŨ ---
+            io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
+            driver = new org.openqa.selenium.chrome.ChromeDriver();
         }
 
-        io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver(options);
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(framework.config.ConfigReader.getInstance().getBaseUrl());
-
         tlDriver.set(driver);
     }
 
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
-        // Chụp ảnh TRƯỚC khi quit - bắt buộc trong dự án thực để debug [cite: 306]
         if (result.getStatus() == ITestResult.FAILURE) {
-            String screenshotPath = framework.utils.ScreenshotUtil.capture(getDriver(), result.getName());
+            framework.utils.ScreenshotUtil.capture(getDriver(), result.getName());
         }
-
         if (getDriver() != null) {
             getDriver().quit();
-            tlDriver.remove(); // Quan trọng: tránh memory leak khi chạy song song [cite: 316-317]
+            tlDriver.remove();
         }
     }
 }
-// Nguồn tham khảo [cite: 286-317]
