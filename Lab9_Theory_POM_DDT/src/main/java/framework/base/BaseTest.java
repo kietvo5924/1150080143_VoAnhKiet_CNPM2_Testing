@@ -5,13 +5,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import java.net.URL;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import java.time.Duration;
 
 public abstract class BaseTest {
@@ -22,22 +20,23 @@ public abstract class BaseTest {
     @BeforeMethod(alwaysRun = true)
     public void setUp(@Optional("chrome") String browser, @Optional("dev") String env) throws Exception {
         System.setProperty("env", env);
-        String gridUrl = System.getProperty("grid.url"); // Nhận link từ lệnh mvn
+        String gridUrl = System.getProperty("grid.url");
         WebDriver driver;
 
         if (gridUrl != null && !gridUrl.isEmpty()) {
-            // --- CẤU HÌNH GỬI LỆNH SANG DOCKER (GRID) ---
-            DesiredCapabilities caps = new DesiredCapabilities();
+            // --- KẾT NỐI VỚI SELENIUM GRID TRÊN DOCKER ---
+            org.openqa.selenium.remote.DesiredCapabilities caps = new org.openqa.selenium.remote.DesiredCapabilities();
             caps.setBrowserName(browser);
+            // Grid 4 đôi khi không cần /wd/hub, nếu lỗi hãy thử bỏ đoạn /wd/hub đi
             driver = new RemoteWebDriver(new URL(gridUrl + "/wd/hub"), caps);
         } else {
-            // --- CẤU HÌNH CHẠY LOCAL NHƯ CŨ ---
-            io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
-            driver = new org.openqa.selenium.chrome.ChromeDriver();
+            // --- CHẠY LOCAL ---
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(framework.config.ConfigReader.getInstance().getBaseUrl());
+        driver.get(ConfigReader.getInstance().getBaseUrl());
         tlDriver.set(driver);
     }
 
